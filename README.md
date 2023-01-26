@@ -11,7 +11,7 @@ Puedes utilizar todo el código para inspirarte o, modificarlo si es tu gusto.
 
 ## Demo
 
-Puedes ver el demo [dando click en este enlace.](https://ucamp-boot-demos-05-2023.netlify.app/)
+Puedes ver el demo [dando click en este enlace.](https://boot-demos-05-2023.netlify.app/)
 
 ## Tecnologías incorporadas
 
