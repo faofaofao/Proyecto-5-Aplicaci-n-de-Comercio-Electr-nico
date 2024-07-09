@@ -59,7 +59,7 @@ export default function Profile() {
 
         const updateData = () => {
 
-            return setUserForm({
+            return setUserForm ({
                 ...userForm,
                 name,
                 lastname,
@@ -101,7 +101,7 @@ export default function Profile() {
                                                 Tu nombre
                                             </label>
                                             <div className="mt-1">
-                                                <input type="text" name="first-name" id="first-name" autocomplete="given-name" className="p-1 border border-gray shadow-sm px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent block w-full pr-6 sm:text-sm border-gray-300"
+                                                <input type="text" name="first-name" id="first-name" autoComplete="given-name" className="p-1 border border-gray shadow-sm px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent block w-full pr-6 sm:text-sm border-gray-300"
                                                     name="name"
                                                     value={userForm.name}
                                                     onChange={(e) => { handleChange(e) }}
@@ -114,7 +114,7 @@ export default function Profile() {
                                                 Tus apellidos
                                             </label>
                                             <div className="mt-1">
-                                                <input type="text" name="last-name" id="last-name" autocomplete="family-name" className="p-1 border border-gray shadow-sm px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent block w-full pr-6 sm:text-sm border-gray-300"
+                                                <input type="text" name="last-name" id="last-name" autoComplete="family-name" className="p-1 border border-gray shadow-sm px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent block w-full pr-6 sm:text-sm border-gray-300"
                                                     name="lastname"
                                                     value={userForm.lastname}
                                                     onChange={(e) => { handleChange(e) }}
@@ -144,7 +144,7 @@ export default function Profile() {
                                             </label>
 
                                             <div className="mt-1">
-                                                <select id="country" name="country" autocomplete="country" className="p-1 border border-gray shadow-sm px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent block w-full pr-6 sm:text-sm border-gray-300"
+                                                <select id="country" name="country" autoComplete="country" className="p-1 border border-gray shadow-sm px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent block w-full pr-6 sm:text-sm border-gray-300"
                                                     onChange={(e) => { handleChange(e) }}
                                                 >
 

@@ -6,7 +6,7 @@ import ListGuitars from './ListGuitars'
 export default function Main() {
   return (
     <>
-      <main classNameName="mt-10">
+      <main className="mt-10">
         <div>
           <div className="relative">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
@@ -26,10 +26,10 @@ export default function Main() {
                   </p>
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none flex justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid  sm:gap-5">
-                      <Link to="/catalogo">
-                        <a className="flex items-center justify-center px-4 py-3 border border-transparent text-base text-white font-medium rounded-md shadow-sm bg-blue-500 hover:bg-blue-300 sm:px-8">
+                      <Link to="/catalogo" className="flex items-center justify-center px-4 py-3 border border-transparent text-base text-white font-medium rounded-md shadow-sm bg-blue-500 hover:bg-blue-300 sm:px-8">
+                     
                           Ver catálogo
-                        </a>
+                   
                       </Link>
                     </div>
                   </div>

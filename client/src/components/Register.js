@@ -45,10 +45,10 @@ export default function Register() {
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
           ¿Ya tienes cuenta? &nbsp;
-          <Link to="iniciar-sesion">
-            <a className="font-medium text-yellow-500 hover:text-yellow-300">
+          <Link to="iniciar-sesion" className="font-medium text-yellow-500 hover:text-yellow-300">
+            
               Inicia sesión.
-            </a>
+          
           </Link>
         </p>
       </div>

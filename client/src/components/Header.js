@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import UserContext from '../context/User/UserContext'
 
@@ -31,7 +31,7 @@ export default function Header() {
                   <button onClick={toggleMobileSidebar} type="button" className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400">
                     <span className="sr-only">Cerrar menu</span>
                     <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </div>
@@ -45,8 +45,8 @@ export default function Header() {
                   </div>
 
                   <div className="flow-root" onClick={toggleMobileSidebar}>
-                    <Link to="/catalogo">
-                      <a href="#" className="-m-2 p-2 block font-medium text-gray-900">Catálogo</a>
+                    <Link to="/catalogo"  className="-m-2 p-2 block font-medium text-gray-900">
+                     Catálogo
                     </Link>
                   </div>
                 </div>
@@ -57,21 +57,21 @@ export default function Header() {
                     ctxUser.user?.name ?
                       <>
                         <div className="flow-root" onClick={toggleMobileSidebar}>
-                          <Link to="/perfil">
-                            <a href="#" className="-m-2 p-2 block font-medium text-gray-900">Mi perfil</a>
+                          <Link to="/perfil" className="-m-2 p-2 block font-medium text-gray-900">
+                            Mi perfil
                           </Link>
                         </div>
                       </>
                       :
                       <>
                         <div className="flow-root" onClick={toggleMobileSidebar}>
-                          <Link to="/iniciar-sesion">
-                            <a href="#" className="-m-2 p-2 block font-medium text-gray-900">Iniciar sesión</a>
+                          <Link to="/iniciar-sesion" className="-m-2 p-2 block font-medium text-gray-900">
+                            Iniciar sesión
                           </Link>
                         </div>
                         <div className="flow-root" onClick={toggleMobileSidebar}>
-                          <Link to="/iniciar-sesion">
-                            <a href="#" className="-m-2 p-2 block font-medium text-gray-900">Crear cuenta</a>
+                          <Link to="/iniciar-sesion" className="-m-2 p-2 block font-medium text-gray-900">
+                           Crear cuenta
                           </Link>
                         </div>
                       </>
@@ -101,7 +101,7 @@ export default function Header() {
                 <button onClick={toggleMobileSidebar} type="button" className="bg-white p-2 rounded-md text-gray-400 lg:hidden">
                   <span className="sr-only">Open menu</span>
                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                 </button>
 
@@ -144,11 +144,11 @@ export default function Header() {
 
                       <>
                         <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                          <Link to="/perfil">
-                            <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">Tu perfil</a>
+                          <Link to="/perfil" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                          Tu perfil
                           </Link>
                           <span className="h-6 w-px bg-gray-200" aria-hidden="true"></span>
-                          <a onClick={logoutUser} href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">Cerrar sesión</a>
+                          <a onClick={logoutUser} href="/" className="text-sm font-medium text-gray-700 hover:text-gray-800">Cerrar sesión</a>
                         </div>
                       </>
 
